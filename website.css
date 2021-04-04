@@ -1,0 +1,310 @@
+body {
+	background: #fff;
+	margin: 0;
+}
+
+.navbar {
+	padding: 15px;
+	z-index: 9999;
+	position: fixed;
+	margin: 0px;
+	width: 98%;
+    background-color: #fff;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.navbar a {
+	float: right;
+    border-radius:10px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+	margin-left: 5px;
+	font-family: arial;
+    text-decoration: none;
+	cursor: pointer;
+    font-size: 18px;
+	transition: 0.3s ease;
+}
+.navbar a:hover {
+	background: #f2f2f1;
+}
+.navbar a:active {
+	box-shadow: #ddd 0px 0px 0px 3px;
+}
+.logo {
+	pointer-events: none;
+	user-select: none;
+	vertical-align: none;
+}
+
+label {
+    background: -webkit-linear-gradient(#00E2FF, #0076FF);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.logo2 {
+	position: relative;
+	left: 0px;
+	user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+	top: -2px;
+}
+
+
+.heading {
+	position: relative;
+	top: 150px;
+	left: 50px;
+	padding: 50px;
+	height: 400px;
+	width: 400px;
+	border-radius: 100%;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.imgbg {
+	vertical-align: middle;
+	position: relative;
+	top: 95px;
+	width:50%; 
+	height: 50%;
+	opacity: 0.9;
+	transition: ease-out 0.1s;
+}
+.imgbg:hover {
+	width: 60%;
+	cursor: pointer;
+	opacity: 1;
+	top: 80px;
+	height: 60%;
+}
+
+.p1 {
+	position: absolute;
+	top: 290px;
+	width: 50%;
+	font-family: verdana;
+	left: 42%;
+}
+
+.btn {
+	padding: 10px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	font-size: 15px;
+	color: #fff;
+	transition: 0.2s ease;
+	cursor: pointer;
+	background-image: linear-gradient(to top, #0c3483 0%, #004AF7 100%, #9379B1 100%, #004AF7 100%);
+}
+.btn:hover {
+	background-image: linear-gradient(to top, #0c3483 0%, #008DF7 100%, #008DF7 100%, #008DF7 100%);
+	color: #fff;
+}
+
+.btn:active {
+	box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 4px;
+}
+
+
+
+/* Modal Content */
+.modal-content {
+  background: #fff;
+  margin: auto;
+  padding: 20px;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  z-index: 999;
+  transform: translate(-50%, 0);
+  display: none;
+  font-family: arial;
+  width: 30%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.choose {
+	position: relative;
+	
+	padding: 5px;
+}
+.choose a {
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+	color: #000;
+	background: transparent;
+	border-radius: 15px;
+	width: 95%;
+	border-top: 2px solid #fff;
+	border-bottom: 3px solid #fff;
+	border-left: 2px solid #fff;
+	border-right: 2px solid #fff;
+	transition: 0.3s ease;
+}
+.choose a:hover {
+	border-bottom: 3px solid #ddd;
+	border-left: 2px solid #f2f2f2;
+	border-right: 2px solid #f2f2f2;
+	border-top: 2px solid #f2f2f2;
+}
+.choose a:active {
+	background: #f2f2f2;
+}
+
+.content {
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	overflow: auto;
+	width: 200px;
+	height: 1000%;
+	background: #f7f7f7;
+	display: block;
+	padding-top: 70px;
+	padding-bottom: 20px;
+    box-sizing: inherit;
+	margin: 0;
+	margin-left: -2px;
+	border: 2px solid #ddd;
+}
+.content a {
+	padding: 10px;
+	font-family: verdana;
+	display: block;
+	text-decoration: none;
+	color: #000;
+	font-size: 16px;
+	margin: 0;
+	
+}
+.content a:hover {
+	background: #f1f1f1;
+}
+.content a:active {
+	background: #ddd;
+}
+.content .active {
+	background: #004AF7;
+	color: #fff;
+	cursor: pointer;
+}
+.content .active:hover {
+	background: #004AF7;
+	color: #fff;
+	cursor: pointer;
+}
+
+.head {
+	font-family: arial;
+	padding-left: 10px;
+}
+
+.main1 {
+	position: relative;
+	left: 15%;
+	top: 100px;
+	overflow: auto;
+	width: 80%;
+	font-family: arial;
+}
+
+textarea {
+	padding: 10px;
+	resize: none;
+	outline: none;
+	border: none;
+	border-left: 3px solid #004AF7;
+	background: #ffff;
+}
+
+.a {
+	text-decoration: none;
+	padding: 2px;
+	color: #004AF7;
+}
+.a:hover {
+	color: #fff;
+	background: #004AF7;
+}
+
+.editor {
+	background: #f1f1f1;
+	padding: 10px;
+	overflow: hidden;
+	height: 25%;
+}
+.editor2 {
+	background: #f1f1f1;
+	padding: 10px;
+	height: 25%;
+}
+
+.main2 {
+	position: relative;
+	left: 15%;
+	top: 120px;
+	width: 80%;
+	background: #ddd;
+	font-family: arial;
+}
+
+.m1 {
+	position: relative;
+	left: 15%;
+	top: 100px;
+	overflow: auto;
+	width: 80%;
+	font-family: arial;
+}
+
+code {
+	padding: 2px;
+	font-size: 14px;
+	background: #ddd;
+}
+
+.warning {
+	background: #f1f1f1;
+	top: 0;
+	padding: 15px;
+	color: #004AF7;
+}
+
+
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+  position: absolute;
+  top: 75px;
+}
+
+#myBar {
+  width: 0%;
+  height: 5px;
+  background-color: #004AF7;
+}
